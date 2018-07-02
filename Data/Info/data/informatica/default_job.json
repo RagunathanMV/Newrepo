@@ -1,0 +1,11 @@
+{
+    "name": "rgs_informatica_job"
+    "tags": "rgs"
+    "steps": [
+        {
+            "connection": "rgs_informatica_conn",
+            "optionUNZIPALL": "NO"
+        }
+    ]
+}
+

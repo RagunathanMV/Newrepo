@@ -1,0 +1,11 @@
+{  
+   "mode":"files",
+   "connector_id":"oracle",
+   "name":"rgs_oracle_conn",
+   "parameters":{  
+      "defaultSchema":"TEMP",
+      "files_dbname":"DB",
+      "files_dbhost":"DDL",
+      "files_importFileMask":"sql,ddl"
+   }
+}

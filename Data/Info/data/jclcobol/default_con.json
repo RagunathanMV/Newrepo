@@ -1,0 +1,15 @@
+{  
+   "connector_id":"jclcobol",
+   "name":"rgs_jclcobol_conn",
+   "parameters":{
+  	  "srvname":"Mainframe",
+	  "projname":"System",
+      "jclfileExtensions":"jcl",
+      "cobolfileExtensions":"cob,cbl",
+	  "options":"CREATE,PARSEALL",
+      "dbhost":"DB_HOST",
+	  "dbname":"DB",
+	  "defaultSchema":"TEMP",
+	  "extname":"-"	
+   }
+}

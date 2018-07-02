@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!DOCTYPE POWERMART SYSTEM "powrmart.dtd">
+<POWERMART CREATION_DATE="06/06/2018 11:04:34" REPOSITORY_VERSION="181.90">
+<REPOSITORY NAME="Support" VERSION="181" CODEPAGE="MS1252" DATABASETYPE="Microsoft SQL Server">
+<FOLDER NAME="TS18" GROUP="" OWNER="Administrator" SHARED="NOTSHARED" DESCRIPTION="" PERMISSIONS="rwx---r--" UUID="a5f8dbbc-5941-44ab-ab2c-0f67fb78fe9d">
+    <SOURCE BUSINESSNAME ="" DATABASETYPE ="Flat File" DBDNAME ="FlatFile" DESCRIPTION ="" NAME ="norm_src" OBJECTVERSION ="1" OWNERNAME ="" VERSIONNUMBER ="1">
+        <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="," ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="YES" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="DOUBLE" REPEATABLE ="NO" ROWDELIMITER ="0" SHIFTSENSITIVEDATA ="NO" SKIPROWS ="0" STRIPTRAILINGBLANKS ="NO"/>
+        <TABLEATTRIBUTE NAME ="Base Table Name" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Search Specification" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Sort Specification" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Datetime Format" VALUE ="A  19 mm/dd/yyyy hh24:mi:ss"/>
+        <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+        <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+        <TABLEATTRIBUTE NAME ="Add Currently Processed Flat File Name Port" VALUE ="NO"/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="1" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="PRIMARY KEY" LENGTH ="9" LEVEL ="0" NAME ="productid" NULLABLE ="NOTNULL" OCCURS ="0" OFFSET ="0" PHYSICALLENGTH ="9" PHYSICALOFFSET ="0" PICTURETEXT ="" PRECISION ="9" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="2" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="11" LEVEL ="0" NAME ="productname" NULLABLE ="NULL" OCCURS ="0" OFFSET ="9" PHYSICALLENGTH ="11" PHYSICALOFFSET ="9" PICTURETEXT ="" PRECISION ="11" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="3" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="5" LEVEL ="0" NAME ="color" NULLABLE ="NULL" OCCURS ="0" OFFSET ="20" PHYSICALLENGTH ="5" PHYSICALOFFSET ="20" PICTURETEXT ="" PRECISION ="5" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="4" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="8" LEVEL ="0" NAME ="year2017" NULLABLE ="NULL" OCCURS ="0" OFFSET ="25" PHYSICALLENGTH ="8" PHYSICALOFFSET ="25" PICTURETEXT ="" PRECISION ="8" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="5" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="9" LEVEL ="0" NAME ="sales2017" NULLABLE ="NULL" OCCURS ="0" OFFSET ="33" PHYSICALLENGTH ="9" PHYSICALOFFSET ="33" PICTURETEXT ="" PRECISION ="9" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="6" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="8" LEVEL ="0" NAME ="year2018" NULLABLE ="NULL" OCCURS ="0" OFFSET ="42" PHYSICALLENGTH ="8" PHYSICALOFFSET ="42" PICTURETEXT ="" PRECISION ="8" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="7" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="9" LEVEL ="0" NAME ="sales2018" NULLABLE ="NULL" OCCURS ="0" OFFSET ="50" PHYSICALLENGTH ="9" PHYSICALOFFSET ="50" PICTURETEXT ="" PRECISION ="9" SCALE ="0" USAGE_FLAGS =""/>
+    </SOURCE>
+    <TARGET BUSINESSNAME ="" CONSTRAINT ="" DATABASETYPE ="Flat File" DESCRIPTION ="" NAME ="norm_tgt1" OBJECTVERSION ="1" TABLEOPTIONS ="" VERSIONNUMBER ="1">
+        <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="," ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="DOUBLE" REPEATABLE ="NO" ROWDELIMITER ="0" SKIPROWS ="0" STRIPTRAILINGBLANKS ="NO"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="1" KEYTYPE ="PRIMARY KEY" NAME ="productid" NULLABLE ="NOTNULL" PICTURETEXT ="" PRECISION ="9" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="2" KEYTYPE ="NOT A KEY" NAME ="sequence" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="8" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="3" KEYTYPE ="NOT A KEY" NAME ="year" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="4" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="4" KEYTYPE ="NOT A KEY" NAME ="sales" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="5" SCALE ="0"/>
+        <TABLEATTRIBUTE NAME ="Datetime Format" VALUE ="A  19 mm/dd/yyyy hh24:mi:ss"/>
+        <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+        <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+        <TABLEATTRIBUTE NAME ="Line Endings" VALUE ="System default"/>
+    </TARGET>
+    <TARGET BUSINESSNAME ="" CONSTRAINT ="" DATABASETYPE ="Flat File" DESCRIPTION ="" NAME ="norm_tgt" OBJECTVERSION ="1" TABLEOPTIONS ="" VERSIONNUMBER ="1">
+        <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="," ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="DOUBLE" REPEATABLE ="NO" ROWDELIMITER ="0" SKIPROWS ="0" STRIPTRAILINGBLANKS ="NO"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="1" KEYTYPE ="PRIMARY KEY" NAME ="productid" NULLABLE ="NOTNULL" PICTURETEXT ="" PRECISION ="9" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="2" KEYTYPE ="NOT A KEY" NAME ="productname" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="11" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="3" KEYTYPE ="NOT A KEY" NAME ="color" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="5" SCALE ="0"/>
+        <TABLEATTRIBUTE NAME ="Datetime Format" VALUE ="A  19 mm/dd/yyyy hh24:mi:ss"/>
+        <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+        <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+        <TABLEATTRIBUTE NAME ="Line Endings" VALUE ="System default"/>
+    </TARGET>
+    <MAPPING DESCRIPTION ="" ISVALID ="YES" NAME ="m_TS18" OBJECTVERSION ="1" VERSIONNUMBER ="1">
+        <TRANSFORMATION DESCRIPTION ="" NAME ="SQ_norm_src" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Source Qualifier" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="productid" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="9" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="productname" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="11" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="color" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="5" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="year2017" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="8" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="sales2017" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="9" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="year2018" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="8" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="sales2018" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="9" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Sql Query" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="User Defined Join" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Number Of Sorted Ports" VALUE ="0"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Select Distinct" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Is Partitionable" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Post SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Output is deterministic" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output is repeatable" VALUE ="Never"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="norm_trans_TS18" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Normalizer" VERSIONNUMBER ="1">
+            <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="1" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="PRIMARY KEY" LENGTH ="10" LEVEL ="1" NAME ="productid" NULLABLE ="NULL" OCCURS ="0" OFFSET ="0" PHYSICALLENGTH ="10" PHYSICALOFFSET ="0" PICTURETEXT ="9(10)" PRECISION ="10" SCALE ="0" USAGE_FLAGS =""/>
+            <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="2" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="10" LEVEL ="1" NAME ="productname" NULLABLE ="NULL" OCCURS ="0" OFFSET ="10" PHYSICALLENGTH ="10" PHYSICALOFFSET ="10" PICTURETEXT ="X(10)" PRECISION ="10" SCALE ="0" USAGE_FLAGS =""/>
+            <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="3" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="10" LEVEL ="1" NAME ="color" NULLABLE ="NULL" OCCURS ="0" OFFSET ="20" PHYSICALLENGTH ="10" PHYSICALOFFSET ="20" PICTURETEXT ="X(10)" PRECISION ="10" SCALE ="0" USAGE_FLAGS =""/>
+            <SOURCEFIELD BUSINESSNAME ="" DESCRIPTION ="" FIELDNUMBER ="4" FIELDPROPERTY ="0" FIELDTYPE ="GRPITEM" HIDDEN ="NO" LENGTH ="20" LEVEL ="1" NAME ="salesrecords" OCCURS ="2" OFFSET ="30" PHYSICALLENGTH ="20" PHYSICALOFFSET ="30">
+                <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="5" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="10" LEVEL ="2" NAME ="year" NULLABLE ="NULL" OCCURS ="0" OFFSET ="30" PHYSICALLENGTH ="10" PHYSICALOFFSET ="30" PICTURETEXT ="X(10)" PRECISION ="10" SCALE ="0" USAGE_FLAGS =""/>
+                <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="6" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="10" LEVEL ="2" NAME ="sales" NULLABLE ="NULL" OCCURS ="0" OFFSET ="40" PHYSICALLENGTH ="10" PHYSICALOFFSET ="40" PICTURETEXT ="9(10)" PRECISION ="10" SCALE ="0" USAGE_FLAGS =""/>
+            </SOURCEFIELD>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="productid_in" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" REF_SOURCE_FIELD ="productid" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="productname_in" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" REF_SOURCE_FIELD ="productname" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="color_in" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" REF_SOURCE_FIELD ="color" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="year_in1" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" REF_SOURCE_FIELD ="year" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="sales_in1" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" REF_SOURCE_FIELD ="sales" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="year_in2" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" REF_SOURCE_FIELD ="year" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="sales_in2" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" REF_SOURCE_FIELD ="sales" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="productid" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" REF_SOURCE_FIELD ="productid" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="productname" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" REF_SOURCE_FIELD ="productname" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="color" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" REF_SOURCE_FIELD ="color" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="year" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" REF_SOURCE_FIELD ="year" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="sales" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" REF_SOURCE_FIELD ="sales" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="GCID_salesrecords" PICTURETEXT ="" PORTTYPE ="GENERATED COLUMN ID/OUTPUT" PRECISION ="10" REF_SOURCE_FIELD ="salesrecords" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Reset" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Restart" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Is Partitionable" VALUE ="NO"/>
+        </TRANSFORMATION>
+        <INSTANCE DESCRIPTION ="" INSTANCEID ="5" NAME ="norm_tgt" TRANSFORMATION_NAME ="norm_tgt" TRANSFORMATION_TYPE ="Target Definition" TYPE ="TARGET"/>
+        <INSTANCE DESCRIPTION ="" INSTANCEID ="6" NAME ="norm_tgt1" TRANSFORMATION_NAME ="norm_tgt1" TRANSFORMATION_TYPE ="Target Definition" TYPE ="TARGET"/>
+        <INSTANCE DBDNAME ="FlatFile" DESCRIPTION ="" INSTANCEID ="1" NAME ="norm_src" TRANSFORMATION_NAME ="norm_src" TRANSFORMATION_TYPE ="Source Definition" TYPE ="SOURCE"/>
+        <INSTANCE DESCRIPTION ="" INSTANCEID ="2" NAME ="SQ_norm_src" REUSABLE ="NO" TRANSFORMATION_NAME ="SQ_norm_src" TRANSFORMATION_TYPE ="Source Qualifier" TYPE ="TRANSFORMATION">
+            <ASSOCIATED_SOURCE_INSTANCE NAME ="norm_src"/>
+        </INSTANCE>
+        <INSTANCE DESCRIPTION ="" INSTANCEID ="4" NAME ="norm_trans_TS18" REUSABLE ="NO" TRANSFORMATION_NAME ="norm_trans_TS18" TRANSFORMATION_TYPE ="Normalizer" TYPE ="TRANSFORMATION"/>
+        <CONNECTOR FROMFIELD ="productid" FROMINSTANCE ="norm_trans_TS18" FROMINSTANCETYPE ="Normalizer" TOFIELD ="productid" TOINSTANCE ="norm_tgt" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="productname" FROMINSTANCE ="norm_trans_TS18" FROMINSTANCETYPE ="Normalizer" TOFIELD ="productname" TOINSTANCE ="norm_tgt" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="color" FROMINSTANCE ="norm_trans_TS18" FROMINSTANCETYPE ="Normalizer" TOFIELD ="color" TOINSTANCE ="norm_tgt" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="productid" FROMINSTANCE ="norm_trans_TS18" FROMINSTANCETYPE ="Normalizer" TOFIELD ="productid" TOINSTANCE ="norm_tgt1" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="GCID_salesrecords" FROMINSTANCE ="norm_trans_TS18" FROMINSTANCETYPE ="Normalizer" TOFIELD ="sequence" TOINSTANCE ="norm_tgt1" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="year" FROMINSTANCE ="norm_trans_TS18" FROMINSTANCETYPE ="Normalizer" TOFIELD ="year" TOINSTANCE ="norm_tgt1" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="sales" FROMINSTANCE ="norm_trans_TS18" FROMINSTANCETYPE ="Normalizer" TOFIELD ="sales" TOINSTANCE ="norm_tgt1" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="productid" FROMINSTANCE ="norm_src" FROMINSTANCETYPE ="Source Definition" TOFIELD ="productid" TOINSTANCE ="SQ_norm_src" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="productname" FROMINSTANCE ="norm_src" FROMINSTANCETYPE ="Source Definition" TOFIELD ="productname" TOINSTANCE ="SQ_norm_src" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="color" FROMINSTANCE ="norm_src" FROMINSTANCETYPE ="Source Definition" TOFIELD ="color" TOINSTANCE ="SQ_norm_src" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="year2017" FROMINSTANCE ="norm_src" FROMINSTANCETYPE ="Source Definition" TOFIELD ="year2017" TOINSTANCE ="SQ_norm_src" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="sales2017" FROMINSTANCE ="norm_src" FROMINSTANCETYPE ="Source Definition" TOFIELD ="sales2017" TOINSTANCE ="SQ_norm_src" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="year2018" FROMINSTANCE ="norm_src" FROMINSTANCETYPE ="Source Definition" TOFIELD ="year2018" TOINSTANCE ="SQ_norm_src" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="sales2018" FROMINSTANCE ="norm_src" FROMINSTANCETYPE ="Source Definition" TOFIELD ="sales2018" TOINSTANCE ="SQ_norm_src" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="productid" FROMINSTANCE ="SQ_norm_src" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="productid_in" TOINSTANCE ="norm_trans_TS18" TOINSTANCETYPE ="Normalizer"/>
+        <CONNECTOR FROMFIELD ="productname" FROMINSTANCE ="SQ_norm_src" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="productname_in" TOINSTANCE ="norm_trans_TS18" TOINSTANCETYPE ="Normalizer"/>
+        <CONNECTOR FROMFIELD ="color" FROMINSTANCE ="SQ_norm_src" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="color_in" TOINSTANCE ="norm_trans_TS18" TOINSTANCETYPE ="Normalizer"/>
+        <CONNECTOR FROMFIELD ="year2017" FROMINSTANCE ="SQ_norm_src" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="year_in1" TOINSTANCE ="norm_trans_TS18" TOINSTANCETYPE ="Normalizer"/>
+        <CONNECTOR FROMFIELD ="sales2017" FROMINSTANCE ="SQ_norm_src" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="sales_in1" TOINSTANCE ="norm_trans_TS18" TOINSTANCETYPE ="Normalizer"/>
+        <CONNECTOR FROMFIELD ="year2018" FROMINSTANCE ="SQ_norm_src" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="year_in2" TOINSTANCE ="norm_trans_TS18" TOINSTANCETYPE ="Normalizer"/>
+        <CONNECTOR FROMFIELD ="sales2018" FROMINSTANCE ="SQ_norm_src" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="sales_in2" TOINSTANCE ="norm_trans_TS18" TOINSTANCETYPE ="Normalizer"/>
+        <TARGETLOADORDER ORDER ="1" TARGETINSTANCE ="norm_tgt"/>
+        <TARGETLOADORDER ORDER ="1" TARGETINSTANCE ="norm_tgt1"/>
+        <ERPINFO/>
+    </MAPPING>
+    <CONFIG DESCRIPTION ="Default session configuration object" ISDEFAULT ="YES" NAME ="default_session_config" VERSIONNUMBER ="1">
+        <ATTRIBUTE NAME ="Advanced" VALUE =""/>
+        <ATTRIBUTE NAME ="Constraint based load ordering" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Cache LOOKUP() function" VALUE ="YES"/>
+        <ATTRIBUTE NAME ="Default buffer block size" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Line Sequential buffer length" VALUE ="1024"/>
+        <ATTRIBUTE NAME ="Maximum Memory Allowed For Auto Memory Attributes" VALUE ="512MB"/>
+        <ATTRIBUTE NAME ="Maximum Percentage of Total Memory Allowed For Auto Memory Attributes" VALUE ="5"/>
+        <ATTRIBUTE NAME ="Additional Concurrent Pipelines for Lookup Cache Creation" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Custom Properties" VALUE =""/>
+        <ATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Optimization Level" VALUE ="Medium"/>
+        <ATTRIBUTE NAME ="DateTime Format String" VALUE ="MM/DD/YYYY HH24:MI:SS.US"/>
+        <ATTRIBUTE NAME ="Pre 85 Timestamp Compatibility" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Log Options" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Save session log by" VALUE ="Session runs"/>
+        <ATTRIBUTE NAME ="Save session log for these runs" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Session Log File Max Size" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Session Log File Max Time Period" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Maximum Partial Session Log Files" VALUE ="1"/>
+        <ATTRIBUTE NAME ="Writer Commit Statistics Log Frequency" VALUE ="1"/>
+        <ATTRIBUTE NAME ="Writer Commit Statistics Log Interval" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Error handling" VALUE =""/>
+        <ATTRIBUTE NAME ="Stop on errors" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Override tracing" VALUE ="None"/>
+        <ATTRIBUTE NAME ="On Stored Procedure error" VALUE ="Stop"/>
+        <ATTRIBUTE NAME ="On Pre-session command task error" VALUE ="Stop"/>
+        <ATTRIBUTE NAME ="On Pre-Post SQL error" VALUE ="Stop"/>
+        <ATTRIBUTE NAME ="Enable Recovery" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Error Log Type" VALUE ="None"/>
+        <ATTRIBUTE NAME ="Error Log Table Name Prefix" VALUE =""/>
+        <ATTRIBUTE NAME ="Error Log File Name" VALUE ="PMError.log"/>
+        <ATTRIBUTE NAME ="Log Source Row Data" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Data Column Delimiter" VALUE ="|"/>
+        <ATTRIBUTE NAME ="Partitioning Options" VALUE =""/>
+        <ATTRIBUTE NAME ="Dynamic Partitioning" VALUE ="Disabled"/>
+        <ATTRIBUTE NAME ="Number of Partitions" VALUE ="1"/>
+        <ATTRIBUTE NAME ="Multiplication Factor" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Session on Grid" VALUE =""/>
+        <ATTRIBUTE NAME ="Is Enabled" VALUE ="NO"/>
+    </CONFIG>
+    <WORKFLOW DESCRIPTION ="These workflows are created from the Workflow Generation Wizard." ISENABLED ="YES" ISRUNNABLESERVICE ="NO" ISSERVICE ="NO" ISVALID ="YES" NAME ="wf_norn_TS18_m_TS18" REUSABLE_SCHEDULER ="NO" SCHEDULERNAME ="Scheduler" SERVERNAME ="ravana" SERVER_DOMAINNAME ="RAWAN" SUSPEND_ON_ERROR ="NO" TASKS_MUST_RUN_ON_SERVER ="NO" VERSIONNUMBER ="1">
+        <SCHEDULER DESCRIPTION ="" NAME ="Scheduler" REUSABLE ="NO" VERSIONNUMBER ="1">
+            <SCHEDULEINFO SCHEDULETYPE ="ONDEMAND"/>
+        </SCHEDULER>
+        <TASK DESCRIPTION ="" NAME ="Start" REUSABLE ="NO" TYPE ="Start" VERSIONNUMBER ="1"/>
+        <SESSION DESCRIPTION ="" ISVALID ="YES" MAPPINGNAME ="m_TS18" NAME ="s_norm_TS18_m_TS18" REUSABLE ="NO" SORTORDER ="Binary" VERSIONNUMBER ="1">
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="NO" PIPELINE ="0" SINSTANCENAME ="norm_src" STAGE ="0" TRANSFORMATIONNAME ="norm_src" TRANSFORMATIONTYPE ="Source Definition">
+                <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="," ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="YES" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="DOUBLE" REPEATABLE ="NO" ROWDELIMITER ="0" SKIPROWS ="0" STRIPTRAILINGBLANKS ="NO"/>
+            </SESSTRANSFORMATIONINST>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="YES" PARTITIONTYPE ="PASS THROUGH" PIPELINE ="1" SINSTANCENAME ="SQ_norm_src" STAGE ="1" TRANSFORMATIONNAME ="SQ_norm_src" TRANSFORMATIONTYPE ="Source Qualifier"/>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="NO" PIPELINE ="1" SINSTANCENAME ="norm_trans_TS18" STAGE ="1" TRANSFORMATIONNAME ="norm_trans_TS18" TRANSFORMATIONTYPE ="Normalizer"/>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="YES" PARTITIONTYPE ="PASS THROUGH" PIPELINE ="1" SINSTANCENAME ="norm_tgt" STAGE ="2" TRANSFORMATIONNAME ="norm_tgt" TRANSFORMATIONTYPE ="Target Definition">
+                <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="," ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="DOUBLE" REPEATABLE ="NO" ROWDELIMITER ="0" SKIPROWS ="0" STRIPTRAILINGBLANKS ="NO"/>
+            </SESSTRANSFORMATIONINST>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="YES" PARTITIONTYPE ="PASS THROUGH" PIPELINE ="1" SINSTANCENAME ="norm_tgt1" STAGE ="3" TRANSFORMATIONNAME ="norm_tgt1" TRANSFORMATIONTYPE ="Target Definition">
+                <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="," ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="DOUBLE" REPEATABLE ="NO" ROWDELIMITER ="0" SKIPROWS ="0" STRIPTRAILINGBLANKS ="NO"/>
+            </SESSTRANSFORMATIONINST>
+            <CONFIGREFERENCE REFOBJECTNAME ="default_session_config" TYPE ="Session config"/>
+            <SESSIONCOMPONENT REFOBJECTNAME ="presession_variable_assignment" REUSABLE ="NO" TYPE ="Pre-session variable assignment">
+                <TASK DESCRIPTION ="" NAME ="presession_variable_assignment" REUSABLE ="NO" TYPE ="Command" VERSIONNUMBER ="1">
+                    <ATTRIBUTE NAME ="Fail task if any command fails" VALUE ="NO"/>
+                    <ATTRIBUTE NAME ="Recovery Strategy" VALUE ="Fail task and continue workflow"/>
+                </TASK>
+            </SESSIONCOMPONENT>
+            <SESSIONCOMPONENT REFOBJECTNAME ="postsession_success_variable_assignment" REUSABLE ="NO" TYPE ="Post-session success variable assignment">
+                <TASK DESCRIPTION ="" NAME ="postsession_success_variable_assignment" REUSABLE ="NO" TYPE ="Command" VERSIONNUMBER ="1">
+                    <ATTRIBUTE NAME ="Fail task if any command fails" VALUE ="NO"/>
+                    <ATTRIBUTE NAME ="Recovery Strategy" VALUE ="Fail task and continue workflow"/>
+                </TASK>
+            </SESSIONCOMPONENT>
+            <SESSIONCOMPONENT REFOBJECTNAME ="postsession_failure_variable_assignment" REUSABLE ="NO" TYPE ="Post-session failure variable assignment">
+                <TASK DESCRIPTION ="" NAME ="postsession_failure_variable_assignment" REUSABLE ="NO" TYPE ="Command" VERSIONNUMBER ="1">
+                    <ATTRIBUTE NAME ="Fail task if any command fails" VALUE ="NO"/>
+                    <ATTRIBUTE NAME ="Recovery Strategy" VALUE ="Fail task and continue workflow"/>
+                </TASK>
+            </SESSIONCOMPONENT>
+            <SESSIONEXTENSION DSQINSTNAME ="SQ_norm_src" DSQINSTTYPE ="Source Qualifier" NAME ="File Reader" SINSTANCENAME ="norm_src" SUBTYPE ="File Reader" TRANSFORMATIONTYPE ="Source Definition" TYPE ="READER">
+                <CONNECTIONREFERENCE CNXREFNAME ="Connection" CONNECTIONNAME ="" CONNECTIONNUMBER ="1" CONNECTIONSUBTYPE ="" CONNECTIONTYPE ="" VARIABLE =""/>
+                <ATTRIBUTE NAME ="Input Type" VALUE ="File"/>
+                <ATTRIBUTE NAME ="Concurrent read partitioning" VALUE ="Optimize throughput"/>
+                <ATTRIBUTE NAME ="Command Type" VALUE ="Command Generating Data"/>
+                <ATTRIBUTE NAME ="Source filetype" VALUE ="Direct"/>
+                <ATTRIBUTE NAME ="Source file directory" VALUE ="$PMSourceFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Source filename" VALUE ="norm_src.txt"/>
+                <ATTRIBUTE NAME ="Command" VALUE =""/>
+                <ATTRIBUTE NAME ="File Reader Truncate String Null" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Codepage Parameter" VALUE =""/>
+            </SESSIONEXTENSION>
+            <SESSIONEXTENSION NAME ="File Reader" SINSTANCENAME ="SQ_norm_src" SUBTYPE ="File Reader" TRANSFORMATIONTYPE ="Source Qualifier" TYPE ="READER"/>
+            <SESSIONEXTENSION NAME ="File Writer" SINSTANCENAME ="norm_tgt" SUBTYPE ="File Writer" TRANSFORMATIONTYPE ="Target Definition" TYPE ="WRITER">
+                <CONNECTIONREFERENCE CNXREFNAME ="Connection" CONNECTIONNAME ="" CONNECTIONNUMBER ="1" CONNECTIONSUBTYPE ="" CONNECTIONTYPE ="" VARIABLE =""/>
+                <ATTRIBUTE NAME ="Merge Type" VALUE ="No Merge"/>
+                <ATTRIBUTE NAME ="Merge File Directory" VALUE ="$PMTargetFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Merge File Name" VALUE ="norm_tgt1.out"/>
+                <ATTRIBUTE NAME ="Append if Exists" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Create Target Directory" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Header Options" VALUE ="No Header"/>
+                <ATTRIBUTE NAME ="Header Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Footer Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Output Type" VALUE ="File"/>
+                <ATTRIBUTE NAME ="Merge Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Output file directory" VALUE ="$PMTargetFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Output filename" VALUE ="norm_tgt.out"/>
+                <ATTRIBUTE NAME ="Reject file directory" VALUE ="$PMBadFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Reject filename" VALUE ="norm_tgt.bad"/>
+                <ATTRIBUTE NAME ="Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Codepage Parameter" VALUE =""/>
+            </SESSIONEXTENSION>
+            <SESSIONEXTENSION NAME ="File Writer" SINSTANCENAME ="norm_tgt1" SUBTYPE ="File Writer" TRANSFORMATIONTYPE ="Target Definition" TYPE ="WRITER">
+                <CONNECTIONREFERENCE CNXREFNAME ="Connection" CONNECTIONNAME ="" CONNECTIONNUMBER ="1" CONNECTIONSUBTYPE ="" CONNECTIONTYPE ="" VARIABLE =""/>
+                <ATTRIBUTE NAME ="Merge Type" VALUE ="No Merge"/>
+                <ATTRIBUTE NAME ="Merge File Directory" VALUE ="$PMTargetFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Merge File Name" VALUE ="norm_tgt11.out"/>
+                <ATTRIBUTE NAME ="Append if Exists" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Create Target Directory" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Header Options" VALUE ="No Header"/>
+                <ATTRIBUTE NAME ="Header Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Footer Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Output Type" VALUE ="File"/>
+                <ATTRIBUTE NAME ="Merge Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Output file directory" VALUE ="$PMTargetFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Output filename" VALUE ="norm_tgt1.out"/>
+                <ATTRIBUTE NAME ="Reject file directory" VALUE ="$PMBadFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Reject filename" VALUE ="norm_tgt1.bad"/>
+                <ATTRIBUTE NAME ="Command" VALUE =""/>
+                <ATTRIBUTE NAME ="Codepage Parameter" VALUE =""/>
+            </SESSIONEXTENSION>
+            <ATTRIBUTE NAME ="General Options" VALUE =""/>
+            <ATTRIBUTE NAME ="Write Backward Compatible Session Log File" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Session Log File Name" VALUE ="s_norm_TS18_m_TS18.log"/>
+            <ATTRIBUTE NAME ="Session Log File directory" VALUE ="$PMSessionLogDir&#x5c;"/>
+            <ATTRIBUTE NAME ="Parameter Filename" VALUE =""/>
+            <ATTRIBUTE NAME ="Enable Test Load" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="$Source connection value" VALUE =""/>
+            <ATTRIBUTE NAME ="$Target connection value" VALUE =""/>
+            <ATTRIBUTE NAME ="Treat source rows as" VALUE ="Insert"/>
+            <ATTRIBUTE NAME ="Commit Type" VALUE ="Target"/>
+            <ATTRIBUTE NAME ="Commit Interval" VALUE ="10000"/>
+            <ATTRIBUTE NAME ="Commit On End Of File" VALUE ="YES"/>
+            <ATTRIBUTE NAME ="Rollback Transactions on Errors" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Recovery Strategy" VALUE ="Fail task and continue workflow"/>
+            <ATTRIBUTE NAME ="Java Classpath" VALUE =""/>
+            <ATTRIBUTE NAME ="Performance" VALUE =""/>
+            <ATTRIBUTE NAME ="DTM buffer size" VALUE ="24000000"/>
+            <ATTRIBUTE NAME ="Collect performance data" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Write performance data to repository" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Incremental Aggregation" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Session retry on deadlock" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Pushdown Optimization" VALUE ="None"/>
+            <ATTRIBUTE NAME ="Allow Temporary View for Pushdown" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Allow Temporary Sequence for Pushdown" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Allow Pushdown for User Incompatible Connections" VALUE ="NO"/>
+        </SESSION>
+        <TASKINSTANCE DESCRIPTION ="" ISENABLED ="YES" NAME ="Start" REUSABLE ="NO" TASKNAME ="Start" TASKTYPE ="Start"/>
+        <TASKINSTANCE DESCRIPTION ="" FAIL_PARENT_IF_INSTANCE_DID_NOT_RUN ="NO" FAIL_PARENT_IF_INSTANCE_FAILS ="NO" ISENABLED ="YES" NAME ="s_norm_TS18_m_TS18" REUSABLE ="NO" TASKNAME ="s_norm_TS18_m_TS18" TASKTYPE ="Session" TREAT_INPUTLINK_AS_AND ="YES"/>
+        <WORKFLOWLINK CONDITION ="" FROMTASK ="Start" TOTASK ="s_norm_TS18_m_TS18"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task started" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.StartTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task completed" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.EndTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.Status" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of the previous task that is not disabled" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.PrevTaskStatus" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Error code for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.ErrorCode" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="Error message for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.ErrorMsg" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task started" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.StartTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task completed" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.EndTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.Status" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of the previous task that is not disabled" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.PrevTaskStatus" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Error code for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.ErrorCode" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="Error message for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.ErrorMsg" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows successfully read" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.SrcSuccessRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows failed to read" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.SrcFailedRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows successfully loaded" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.TgtSuccessRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows failed to load" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.TgtFailedRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Total number of transformation errors" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.TotalTransErrors" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="First error code" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.FirstErrorCode" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="First error message" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_norm_TS18_m_TS18.FirstErrorMsg" USERDEFINED ="NO"/>
+        <ATTRIBUTE NAME ="Parameter Filename" VALUE =""/>
+        <ATTRIBUTE NAME ="Write Backward Compatible Workflow Log File" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Workflow Log File Name" VALUE ="wf_norn_TS18_m_TS18.log"/>
+        <ATTRIBUTE NAME ="Workflow Log File Directory" VALUE ="$PMWorkflowLogDir&#x5c;"/>
+        <ATTRIBUTE NAME ="Save Workflow log by" VALUE ="By runs"/>
+        <ATTRIBUTE NAME ="Save workflow log for these runs" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Service Name" VALUE =""/>
+        <ATTRIBUTE NAME ="Service Timeout" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Is Service Visible" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Is Service Protected" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Enable HA recovery" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Automatically recover terminated tasks" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Service Level Name" VALUE ="Default"/>
+        <ATTRIBUTE NAME ="Allow concurrent run with unique run instance name" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Allow concurrent run with same run instance name" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Maximum number of concurrent runs" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Assigned Web Services Hubs" VALUE =""/>
+        <ATTRIBUTE NAME ="Maximum number of concurrent runs per Hub" VALUE ="1000"/>
+        <ATTRIBUTE NAME ="Expected Service Time" VALUE ="1"/>
+    </WORKFLOW>
+</FOLDER>
+</REPOSITORY>
+</POWERMART>

@@ -1,0 +1,11 @@
+{  
+   "connector_id":"infa",
+   "name":"rgs_informatica_conn",
+   "parameters":{  
+      "fileExtensions":"xml",
+      "options":"CREATE",
+      "dbhost":"DB_HOST",
+	  "dbname":"DB",
+	  "defaultSchema":"TEMP"      
+   }
+}

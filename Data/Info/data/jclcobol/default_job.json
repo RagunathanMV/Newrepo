@@ -1,0 +1,11 @@
+{
+    "name": "rgs_jclcobol_job"
+    "tags": "rgs"
+    "steps": [
+        {
+            "connection": "rgs_jclcobol_conn",
+            "optionNOSTORE": ""
+        }
+    ]
+}
+
